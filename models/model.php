@@ -18,7 +18,7 @@ class Model
     {
         $query = mysqli_query($this->conn, $sql);
         if ($query) {
-            $result = mysqli_fetch_assoc($query);
+            $result = mysqli_fetch_all($query);
             if ($result) {
                 return $result;
             } else {
