@@ -17,7 +17,7 @@ class Router
                 $functionName = explode("@", $routeValue)[1];
                 $class = $className;
                 $controller = new $class();
-                echo $controller->$functionName();
+                print_r($controller->$functionName());
             }
         }
     }
