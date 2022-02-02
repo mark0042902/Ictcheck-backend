@@ -11,6 +11,6 @@ class Question extends Model
 
     public function getAll()
     {
-        return "GetAll";
+        return $this->query("SELECT * FROM questions");
     }
 }
