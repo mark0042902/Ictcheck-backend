@@ -1,9 +1,16 @@
 <?php
 
-class Question
+require_once("models/model.php");
+
+class Question extends Model
 {
-    public function GetAll()
+    public function __construct()
     {
-        return "MySQL";
+        $this->init();
+    }
+
+    public function getAll()
+    {
+        return "GetAll";
     }
 }

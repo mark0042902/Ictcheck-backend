@@ -5,7 +5,7 @@ require_once("controllers/questions.php");
 class Router
 {
     private $routes = [
-        "questions" => "Questions@GetAll"
+        "questions" => "Questions@getAll"
     ];
 
     public function __construct($url)
